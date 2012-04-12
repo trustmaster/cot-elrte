@@ -3,9 +3,9 @@
 [BEGIN_COT_EXT]
 Code=elrte
 Name=elRTE
-Category=editor-parser
+Category=editor
 Description=WYSIWYG HTML editor using jQuery UI
-Version=1.3-0.9.0
+Version=1.3-0.9.1
 Date=2011-06-30
 Author=Studio 42, http://elrte.org
 Copyright=Copyright (C) Studio 42
