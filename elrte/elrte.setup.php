@@ -3,7 +3,7 @@
 [BEGIN_COT_EXT]
 Code=elrte
 Name=elRTE
-Category=editor
+Category=editor-parser
 Description=WYSIWYG HTML editor using jQuery UI
 Version=1.3-0.9.0
 Date=2011-06-30
