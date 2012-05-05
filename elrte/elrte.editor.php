@@ -19,9 +19,11 @@ defined('COT_CODE') or die('Wrong URL');
 
 // Language selection
 global $lang;
+$lang_mark = $lang;
 $mkup_lang = $cfg['plugins_dir']."/elrte/js/i18n/elrte.$lang.js";
 if (!file_exists($mkup_lang))
 {
+	$lang_mark = 'en';
 	$mkup_lang = $cfg['plugins_dir']."/elrte/js/i18n/elrte.en.js";
 }
 
@@ -36,6 +38,9 @@ cot_rc_link_footer($cfg['plugins_dir'] . "/elrte/js/elrte.set.js");
 cot_rc_embed_footer('$(document).ready(function() {
 	$("head").append(\''.$mkup_skin.'\');
 	$("head").append(\''.$mkup_theme.'\');
+	miniSettings.lang = \''.$lang_mark .'\';
+	mediSettings.lang = \''.$lang_mark .'\';
+	mySettings.lang = \''.$lang_mark .'\';
 	$("textarea.editor").elrte(mySettings);
 	$("textarea.medieditor").elrte(mediSettings);
 	$("textarea.minieditor").elrte(miniSettings);
