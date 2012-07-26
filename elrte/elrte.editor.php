@@ -38,8 +38,8 @@ cot_rc_link_footer($mkup_lang);
 cot_rc_link_footer($cfg['plugins_dir'] . "/elrte/js/elrte.set.js");
 
 cot_rc_embed_footer('$(document).ready(function() {
-	if (document.createStyleSheet) { document.createStyleSheet("'.$mkup_skin_path.'"); } else { $("head").append("'.$mkup_skin.'"); }
-	if (document.createStyleSheet) { document.createStyleSheet("'.$mkup_theme_path.'"); } else { $("head").append("'.$mkup_theme.'"); }
+	if (document.createStyleSheet) { document.createStyleSheet(\''.$mkup_skin_path.'\'); } else { $("head").append(\''.$mkup_skin.'\'); }
+	if (document.createStyleSheet) { document.createStyleSheet(\''.$mkup_theme_path.'\'); } else { $("head").append(\''.$mkup_theme.'\'); }
 	mySettings.lang = \''.$lang_mark.'\';mediSettings.lang = \''.$lang_mark.'\';miniSettings.lang = \''.$lang_mark.'\';
 	$("textarea.editor").elrte(mySettings);
 	$("textarea.medieditor").elrte(mediSettings);
