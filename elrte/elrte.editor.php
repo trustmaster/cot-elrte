@@ -9,9 +9,8 @@ Hooks=editor
  * elRTE connector for Cotonti
  *
  * @package elrte
- * @version 0.9.0
  * @author Trustmaster
- * @copyright Copyright (c) Cotonti Team 2011
+ * @copyright Copyright (c) Cotonti Team 2014
  * @license BSD
  */
 

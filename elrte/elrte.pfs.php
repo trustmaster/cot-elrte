@@ -9,16 +9,15 @@ Hooks=pfs.first
  * Provides PFS buttons
  *
  * @package elrte
- * @version 0.9.1
  * @author Trustmaster
- * @copyright Copyright (c) Cotonti Team 2011
+ * @copyright Copyright (c) Cotonti Team 2014
  * @license BSD
  */
 
 defined('COT_CODE') or die('Wrong URL');
 
-
-if ($parser == 'html')
+$editor = $cfg['plugin'][$parser]['editor'];
+if ($parser == 'html' && $editor == 'elrte')
 {
 	$R['pfs_code_header_javascript'] = '
 	function addfile(gfile, c2, gdesc) {
